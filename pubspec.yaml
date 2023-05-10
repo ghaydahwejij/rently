@@ -31,6 +31,22 @@ dependencies:
   flutter:
     sdk: flutter
 
+  flutter_launcher_icons: "^0.9.2"
+  table_calendar: ^2.1.0
+  flutter_google_location_picker: ^0.0.3
+  google_maps_flutter: ^2.2.5
+  google_sign_in: ^6.1.0
+
+  syncfusion_flutter_calendar: ^19.1.59
+  intl : ^0.17.0
+  provider: ^5.0.0
+  url_launcher: ^6.1.10
+  firebase_auth: ^4.5.0
+  cloud_firestore: ^4.6.0
+  carousel_slider: ^4.2.1
+  dio: ^5.0.3
+
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -39,7 +55,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "^0.9.2"
 
 
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -70,6 +85,75 @@ flutter:
      - images/l.png
      - images/h1.png
      - images/stars.png
+     - images/unfurr.png
+     - images/single.png
+     - images/common.png
+     - images/fur.png
+     - images/line.png
+     - images/m1.png
+     - images/m2.png
+     - images/m3.png
+     - images/m4.png
+     - images/home1.png
+     - images/sp.png
+     - images/sh3.png
+     - images/beach.png
+     - images/shalih1.png
+     - images/Rectangle 104.png
+     - images/Rectangle 137.png
+     - images/Rectangle 138.png
+     - images/Rectangle 140.png
+     - images/Rectangle 141.png
+     - images/Rectangle 142.png
+     - images/Rectangle 152.png
+     - images/heart.png
+     - images/LOGO2.png
+     - images/map.png
+     - images/house.png
+     - images/flats.png
+     - images/glogo.png
+     - images/logo.png
+     - images/r2-removebg-preview 2.png
+     - icons/google.png
+     - images/b.png
+     - images/t.png
+     - images/l.png
+     - images/h1.png
+     - images/stars.png
+     - images/f1.jpg
+     - images/f2.jpg
+     - images/f3.jpg
+     - icons/threedots.png
+     - icons/airc.png
+     - icons/left.png
+     - icons/flats.png
+     - icons/sofa.png
+     - icons/happy.png
+     - icons/sad.png
+     - images/h1.jpg
+     - images/h2.jpg
+     - images/h3.jpg
+     - images/h4.jpg
+     - icons/kia.png
+     - icons/ferari.png
+     - icons/bmw.png
+     - icons/toyo.png
+     - images/c1.png
+     - images/c2.png
+     - images/c3.png
+     - images/c4.png
+     - images/motor.png
+     - images/bus.png
+     - icons/fu.jpg
+     - icons/unfu.jpg
+     - icons/single.jpg
+     - icons/shared.jpg
+     - icons/line.jpg
+     - icons/b1.jpg
+     - icons/b2.jpg
+     - images/heart.png
+     - images/user.png
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

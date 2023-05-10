@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "968946191684",
+    "project_id": "rently-fdf91",
+    "storage_bucket": "rently-fdf91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968946191684:android:16d18f624d77f5ad749b11",
+        "android_client_info": {
+          "package_name": "com.example.rently"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968946191684-8ag4i507sg9qstu8lu8dfgpu9c15utfr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSGSwJmxLSkBBOuOG-BeeoR5HBLqGsdHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968946191684-8ag4i507sg9qstu8lu8dfgpu9c15utfr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
