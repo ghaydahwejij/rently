@@ -26,7 +26,7 @@ class _BeachDetailsState extends State<BeachDetails> {
       uri,
       mode:LaunchMode.externalApplication,
     )){
-      throw Exception('Could not launch ');
+      throw Exception('Could not launch !!');
     }
   }
 
