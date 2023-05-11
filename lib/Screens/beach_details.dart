@@ -1,7 +1,10 @@
+import 'dart:ffi';
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:rently/Screens/calendar.dart';
 import 'package:rently/Screens/home_details.dart';
 import 'package:rently/provider/beach_db_provider.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -256,17 +259,22 @@ class _BeachDetailsState extends State<BeachDetails> {
                 ],
               ),
               SizedBox(height: 20,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "الأيام المتاحة للحجز",
-                    style: TextStyle(fontSize: 18, color:  Color(0xff004504),fontWeight: FontWeight.w600,
-                        textBaseline: TextBaseline.alphabetic),
-                  ),
-                  Icon(Icons.calendar_month_outlined,color: Color(0xff004504),)
-                ],
-              ),
+              GestureDetector(
+              onTap: (){Navigator.push(context,MaterialPageRoute(builder: (context) => Calendar(index: widget.index)));},
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                 Text(
+                        "الأيام المتاحة للحجز",
+                        style: TextStyle(fontSize: 18, color:  Color(0xff004504),fontWeight: FontWeight.w600,
+                            textBaseline: TextBaseline.alphabetic),
+                      ),
+
+                    Icon(Icons.calendar_month_outlined,color: Color(0xff004504),)
+                  ],
+    ),
+                ),
+
               SizedBox(height: 30,)
             ],
           )

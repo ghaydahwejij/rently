@@ -244,7 +244,7 @@ class NavDrawer extends StatelessWidget {
               ),
               onTap: () => {
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => Houses()))
+                    .push(MaterialPageRoute(builder: (context) => Flats()))
               },
             ),
             Divider(),

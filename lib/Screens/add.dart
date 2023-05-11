@@ -44,12 +44,10 @@ class _AddState extends State<Add> {
             Directionality(
               textDirection: TextDirection.rtl,
               child: TextFormField(
-
-
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                     borderSide:
-                    BorderSide(width: 1.5, color: Color(0xff004504)),
+                        BorderSide(width: 1.5, color: Color(0xff004504)),
                     borderRadius: BorderRadius.circular(30),
                   ),
                   label: Text(
@@ -69,7 +67,6 @@ class _AddState extends State<Add> {
               ),
             ),
             Directionality(
-
               textDirection: TextDirection.rtl,
               child: TextFormField(
                 controller: typeController,
@@ -77,7 +74,7 @@ class _AddState extends State<Add> {
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(30),
                     borderSide:
-                    BorderSide(width: 1.5, color: Color(0xff004504)),
+                        BorderSide(width: 1.5, color: Color(0xff004504)),
                   ),
                   label: Text(
                     "السعر",
@@ -89,26 +86,10 @@ class _AddState extends State<Add> {
                     borderRadius: BorderRadius.circular(30),
                   ),
                   prefixIcon: Icon(
-                    Icons.add,
+                    Icons.add_circle_rounded,
                     color: Color(0xff004504),
                   ),
-                  suffixIcon: IconButton(
-                      onPressed: () {
-                        isPasswordObs = !isPasswordObs;
-                        setState(() {});
-                      },
-                      icon: isPasswordObs
-                          ? Icon(Icons.visibility, color: Colors.white)
-                          : Icon(Icons.visibility_off)),
                 ),
-                obscureText: isPasswordObs,
-                onChanged: (text) {
-                  print(text);
-                },
-                keyboardType: TextInputType.visiblePassword,
-                textInputAction: TextInputAction.go,
-
-
               ),
             ),
             Directionality(
@@ -118,7 +99,7 @@ class _AddState extends State<Add> {
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                     borderSide:
-                    BorderSide(width: 1.5, color: Color(0xff004504)),
+                        BorderSide(width: 1.5, color: Color(0xff004504)),
                     borderRadius: BorderRadius.circular(30),
                   ),
                   label: Text(
@@ -144,10 +125,8 @@ class _AddState extends State<Add> {
                 height: 48,
                 child: ElevatedButton(
                     onPressed: () async {
-                      if(nameController.text=="")
-                        showAlertDialog2(context);
-                      if(nameController.text!="")
-                        showAlertDialog1(context);
+                      if (nameController.text == "") showAlertDialog2(context);
+                      if (nameController.text != "") showAlertDialog1(context);
 
                       //
                       // UserCredential response =await signup();
@@ -163,11 +142,11 @@ class _AddState extends State<Add> {
                     style: ButtonStyle(
                       alignment: Alignment.center,
                       backgroundColor:
-                      MaterialStateProperty.all(Color(0xff1E5B22)),
+                          MaterialStateProperty.all(Color(0xff1E5B22)),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(38.0),
-                          )),
+                        borderRadius: BorderRadius.circular(38.0),
+                      )),
                     )),
               ),
             ),
@@ -177,6 +156,7 @@ class _AddState extends State<Add> {
     );
   }
 }
+
 showAlertDialog1(BuildContext context) {
   // Create button
   Widget okButton = ElevatedButton(
@@ -206,13 +186,13 @@ showAlertDialog1(BuildContext context) {
     },
   );
 }
+
 showAlertDialog2(BuildContext context) {
   // Create button
   Widget okButton = ElevatedButton(
     child: Text("حسنا"),
     onPressed: () {
       Navigator.of(context).pop();
-
     },
   );
   // Create AlertDialog
